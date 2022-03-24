@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+:root{
+    --red:#a40101;
+    --blue:rgb(44, 163, 171);
+    --gris:rgb(196, 196, 196);
+    --orange:rgb(243, 97, 14);
+    --dark-blue:rgb(29, 27, 69);
+    --white:#ffff;
+    --black: rgb(5, 5, 5);
+}
+body{
+    background-color:var(--white) ;
+    font-family:'Poppins', sans-serif;
+}
+footer{
+    color: var(--white);
+    background-color:var(--black) ;
+    text-align: center;
+    padding: 1px 0px 30px;
+    margin: 0px 0px 15px;
+}
+a{
+    color: var(--black);
+}
+
+.login{
+    display: flex;
+    align-items:center ;
+    justify-content: center;  
+}
+.alogin{
+    margin: 0px 50px; 
+}
+.logo{
+    width: 230px;
+    height: auto;
+    margin: 0px 10px;
+}
+
+#jeringa{
+    width: 45px;
+    float: right;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    margin: 15px 20px;  
+    box-shadow: 2px 2px 8px var(--gris);
+    border-radius: 50%;
+}
+
+.iicon{
+    width: 20px;
+    padding: 0px 0px 0px 5px;
+}
+.linea{
+    margin: 0px 20px 0px;
+}
+.logi{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 15px 20px 0px 0px;    
+}
+.alogi{
+    display: flex;
+    padding: 0px 40px;
+}
+
+.banner{
+    background-image: url(../img/medico.png);
+    background-size: 1416px;
+    background-repeat: no-repeat;
+}
+.banner h1{
+    font-size: 55px;
+    padding: 0px 340px;
+    
+}
+.banner h2{
+    font-size: 40px;
+    color: var(--orange);
+    padding: 120px 0px 0px 200px ;
+}
+
+.bblogi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    margin: 0px 45px 0px 160px;
+    padding: 4px 8px;
+    color:var(--white);
+    border-radius: 15px;
+    border-color: var(--dark-blue);
+}
+.bbblogi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    margin: 0px 45px 0px 385px;
+    padding: 4px 8px;
+    color:var(--white);
+    border-radius: 15px;
+    border-color: var(--dark-blue);
+}
+.bblogi a, .bbblogi a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--white);
+    text-decoration: none;
+}
+
+
+.bblogi:hover, .bbblogi:hover{
+    background-color:var(--blue);
+    color: var(--black);
+}
+.espacio{
+    padding: 0px 0px 150px;
+}
+
+
+.franja{
+    width:1416px; 
+    float: left;   
+}
+
+.signos{
+    background-image:url(../img/covid.jpeg);
+    background-repeat: no-repeat;
+    background-size:1416px;
+}
+.blanco{
+    background-color: rgb(255, 255, 255, 0.8);}
+
+.bblanco{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    padding: 15px 120px 50px;
+}
+.rrojo{
+    color: var(--dark-blue);
+    display: flex;
+    padding: 10px 0px;
+}
+.rojo{
+    width: 35px;
+    margin: 15px;
+}
+
+li{
+    list-style-image: url(../img/8-chulo.png);
+    list-style-position: inside;
+    padding:8px;
+    
+}
+
+.oms{
+    width:120px;
+    margin: 5px 0px 0px 110px;
+}
+.curso{
+    margin: 5px 0px 0px 30px;
+}
+.curso a{
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+#dudas{
+    padding: px 0px;
+    background-color: var(--gris);
+    
+}
+.adudas{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 10px;
+    margin: 0px 
+}
+.bdudas{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 10px;
+}
+/*login*/
+.sesion{
+    background-image: url(../img/10.png);
+    background-repeat:no-repeat;
+    background-position-x: -95px;
+    background-position-y: -5px;
+    
+}
+.vvolver{
+    padding: 40px 0px 0px;
+    display: flex;
+    justify-content:flex-end;
+    margin: 0px 470px;
+}
+.volver{
+    background-color: var(--dark-blue);
+    border:2px solid var(--blue);
+    padding: 8px 12px;
+    color:var(--white);
+    border-radius: 5px;
+}
+.volver a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.volver:hover{
+    background-color:var(--blue);
+    border:2px solid var(--dark-blue);
+}
+.slogo{
+    background-color: #a8d9dd;
+    margin: 20px 460px 0px;
+    padding: 50px 0px 30px;
+    border-radius:20px 20px 0px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slogo p{ 
+    font-weight:600;
+    font-size: 20px;
+}
+.sslogo{
+    padding:0px 0px 40px;
+}
+.bsslogo{
+    background-color: var(--white);
+    margin: 0px 460px ;
+    padding: 20px 0px 30px;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#aa{
+    text-decoration: underline;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.log label{
+    padding:15px 0px 10px;
+    font-weight:500;
+    font-size: 18px;
+}
+.log input{
+    width: 270px;
+    height: 20px;
+    padding:5px;
+    border: 2px solid #a8d9dd;
+    border-radius: 13px;
+    background: linear-gradient(to right, #94d2d848, #e0edee5e )
+}
+.bsslogo a{
+    color: var(--black);
+    font-size: 14px;
+    padding: 20px;
+    font-weight:600 ;
+}
+
+.ingresar{
+    background-color: var(--orange);
+    border:2px solid var(--dark-blue);
+    padding: 5px 12px;
+    color:var(--white);
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.ingresar a{
+    color:var(--white);
+    text-decoration: none;
+    
+}
+
+
+.ingresar:hover{
+    background-color:var(--dark-blue);
+    border:2px solid var(--orange);
+}
+/*dashboard*/
+
+
+.menu{
+    background-color: var(--black);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   bottom: 0% ;
+}
+#azu{
+    width: 250px;
+    padding: 90px 0px;
+}
+
+.amenu{
+    background-color:var(--gris) ;
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    width:315px;
+    height: 60px;
+    margin:10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.amenu img{
+    padding: 1px;
+}
+
+.bmenu{
+    background-color: var(--gris);
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    width: 315px;
+    height: 60px;
+    margin:10px 0px 190px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.amenu, .bmenu, a{
+    text-decoration: none;
+}
+.uuser{
+    position:absolute;
+    right: 10px;
+    top: 0%;
+}
+.user{
+    background: linear-gradient(to right, #C0C0C0, #e7e6e6);
+    padding:10px;
+    border:none ;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user:hover{
+    background: linear-gradient(to right, #e7e6e6, #C0C0C0);
+}
+
+.user img{
+    background-color: var(--white);
+    padding: 3px;
+    margin:0px 8px 0px 0px;
+    border: 2px solid var(--orange);
+    border-radius: 70%;
+}
+
+.busqueda{
+    background-color: rgba(196, 196, 196, 0.308);
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+.busqueda h1{
+    color: var(--orange);
+    font-weight: 500;
+    padding:120px 0px 50px 140px;
+}
+
+.medico input{
+    width: 260px;
+    background-color:  rgb(196, 196, 196, 0.1);
+    padding: 5px 10px 10px;
+    margin: 10px 0px;
+    border:none;
+    border-bottom:5px solid var(--dark-blue);
+    border-radius: 5px; 
+}
+
+
+
+.medico{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0px 150px 0px 400px;
+}
+.busqu{
+    background-color: var(--dark-blue);
+    border: 4px solid var(--blue);
+    border-radius:5px ;
+    margin: 5px;
+    cursor:pointer;
+    
+}
+.busqu img{
+    height: 15px;
+    margin: 5px 8px;
+    
+}
+
+
+
+.world{
+    width:400px; 
+    position:absolute;
+    bottom: 0%;
+    right:30px;
+
+}
+.franj{
+    width: 1500px;
+    position:fixed;
+    bottom: 0%;
+    left:0%;
+}
+.aviso{
+    background-color:rgba(0, 0, 0, 0.329);
+
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.aaviso{
+    padding: 25px;
+    border-radius: 5px;
+    background-color: var(--white);
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: fixed;
+    left: 490px;
+    right: 490px;
+    top: 190px;
+    bottom: 190px;
+}
+.aaviso p{
+    font-size: 25px;
+}
+.aavisoo{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.baviso, .caviso{
+    height: 40px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.baviso a, .caviso a {
+    color: var(--white);
+}
+.baviso{
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:5px ;
+    width: 125px;
+}
+.caviso{
+    background-color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    border-radius:5px ;
+}
+
+/*pacientes*/
+.pacient{
+    background-color: var(--black);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pacient img{
+    width: 220px;
+}
+
+#house{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.pa{
+    width: 1400px;
+    background-color: var(--blue);
+    padding: 0px 0px 5px;
+    
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  20px 125px 0px;
+}
+#azul {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+#agregar{
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:10px;
+    padding: 8px 12px;
+}
+#agregar img{
+    padding: 0px 0px 0px 8px;
+}
+#agregar a{
+    color: var(--white);
+}
+
+.pac{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pac input{
+    background-color: var(--white);
+    padding: 10px;
+    border: 3px solid var(--blue);
+    border-radius: 12px;
+}
+.ppac img{
+    width: 25px;
+    padding: 3px;
+}
+.ppac{
+    
+    background-color: var(--dark-blue);
+    border: 3px solid var(--blue);
+    border-radius: 10px;
+    margin: 20px 8px;
+}
+.table{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tablee{
+    border-collapse:collapse;
+    border: 2px solid var(--blue);
+}
+.table th{
+    padding: 10px 40px;
+    background-color: var(--dark-blue);
+    color:var(--white);
+    border: 2px solid var(--blue);
+
+}
+
+.table td{
+    padding: 0px 5px;
+    background-color: var(--gris);
+    border-collapse:collapse;
+    border: 2px solid var(--blue);
+}
+.botom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.edit{
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elim{
+    color: var(--white);
+    background-color: var(--red);
+    border:none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin:0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit img{
+    width: 20px;
+    padding-left: 8px;
+}
+.elim img{
+    width: 25px;
+    padding-left: 8px;
+}
+.foote{color: var(--white);
+    background-color:var(--black) ;
+    text-align: center;
+    margin: 0px;
+    position: static;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+/*form pacientes*/
+.reg h1{
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--dark-blue);
+    position: static;
+    border-radius: 5px;
+}
+.fondo{
+    background-color:var(--white);
+    border: 2px solid rgb(168, 168, 168);
+    margin: 5px 5px 25px 5px;
+}
+.formp{
+    background-color: var(--gris);
+    border: 2px solid  rgb(128, 128, 128);
+    border-radius: 20px;
+    margin: 30px ;
+    padding: 20px;
+}
+.formp h2{
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--blue);
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    padding:5px;
+}
+.formp img{
+    float: left;
+    padding: 5px 50px;
+    width: 20px;
+}
+.inp input{
+    border: 2px solid var(--blue);
+    height: 25px;
+    padding: 5px;
+    margin: 20px 10px 0px 15px;
+}
+.formp select{
+    border: 2px solid var(--blue);
+    height: 40px;
+    padding: 5px;
+    margin: 20px 10px 0px 10px;
+}
+/*1targeta*/
+.opciones input{
+    width: 595px;
+    margin: 10px 15px 20px;
+}
+.opciones select{
+    width: 609px;
+    margin:10px 15px 20px;
+}
+.opciones{
+    display: flex;
+    
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+/*2targeta*/
+.oopciones input{
+    width: 385px;
+    margin: 10px 15px 20px;
+}
+.oopciones select{
+    width: 395px;
+    margin:10px 15px 20px;
+}
+.oopciones{
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+/*3targeta*/
+.preguntas label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.apreguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.apreguntas input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.aagregar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.aagregar button{
+    color: #ffff;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:10px;
+    padding: 8px 25px;
+    margin: 0px 0px 50px 0px;
+}
+.aagregar a{
+    color: var(--white);
+}
+.apreguntas input{
+   margin: 10px;
+}
