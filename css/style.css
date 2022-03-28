@@ -10,48 +10,51 @@
     --white:#ffff;
     --black: rgb(5, 5, 5);
 }
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body{
     background-color:var(--white) ;
     font-family:'Poppins', sans-serif;
 }
+
 /*home cel*/
 /*primer header cel*/
 .logi{
-    border: 2px solid rgb(255, 0, 0);
     text-align: center;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows:50px;
-    grid-template-areas: "telefono ubicacion";
-    gap:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    align-items: center;
+    margin: 5px 0 10px;
 }
 .a-logi{
-    border: 2px solid rgb(151, 75, 75);
-    grid-area: telefono;
-    display: grid;
-    grid-template: 18px / auto;
+    display: flex;
+    align-items: center;
+    padding:0 5px 0 0;
+
 }
 .b-logi{
+    padding:0 5px;
+    display: flex;
     text-align: justify;
-    border: 2px solid rgb(151, 75, 75);
-    grid-area: ubicacion;
-    display: grid;
-    justify-content: center;
-    grid-template: 15px / auto;
+    align-items: center;
 }
 .c-logi{
     visibility: hidden;
+    display:none ;
 }
 .icon{
     width: 25px;
     height: 25px;
-    margin: auto;  
+    margin:0 12px;  
     box-shadow: 2px 2px 8px var(--gris);
     border-radius: 50%;
 }
 
 .c-logi a, .d-logi a{
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     color:var(--white);
@@ -62,30 +65,20 @@ body{
     color: var(--black);
 }
 /*2 header cel*/
-.login{
-    display: grid;
-    border: 2px solid violet;
+.alogin{
     text-align: center;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(1, auto);
-    grid-template-areas: "logo jeringa";
-    gap:0px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-.alogin{
-    display: grid;
-    grid-template-areas:"logo jeringa";
-}
 .logo{
-    grid-area: logo;
     max-width: 230px;
     width: 100%;
-    margin: 0px 0px;
 }
 
 #jeringa{
-    grid-area: jeringa;
     width: 45px;
+    margin-bottom: 15px;
 }
 
 .iicon{
@@ -98,112 +91,247 @@ body{
 }
 /*Banner cel*/
 .banner{
-    border: 2px solid rgb(1, 60, 255);
-    display: grid;
     background-image: url(../img/medico.png);
     background-position-x:right;
-    background-size:850px;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 .banner h1, h2 {
     text-shadow: 2px 2px 4px var(--black);
+    margin-top: 5px;
 }
 .espacio{
-    border: 2px solid rgb(1, 255, 65);
     background-color: rgba(255, 255, 255, 0.431);
     text-align: center;
-    margin: 0%;
-    display: grid;
-    grid-template-rows:repeat(2, 100px) 0px;
-    grid-template-areas: "h1" "h2" "botton";
-    gap:0px;
 }
 .banner h1{
-    font-size: 50px;
-    grid-area: h2;
+    font-size: 50px; 
 }
 .banner h2{
     font-size: 40px;
+    padding-top: 70px;
     color: var(--orange);
-    grid-area: h1;
 }
 .d-logi{
-    margin: auto;
-    border: 2px solid salmon;
-    display: grid;
+    margin: 0 auto 70px;
     background-color: var(--dark-blue);
     padding: 4px 8px;
     color:var(--white);
     border-radius: 15px;
     border-color: var(--dark-blue);
-    grid-area: botton;
 }
 .franja{
-    max-width:1398px;   
-    margin-top:120px;
+    max-width:1400px;   
+    margin-top: 40px;
     width:100%;
 }
 /*Signos y que hacer cel*/
+/*fondo*/
 .signos{
     background-image:url(../img/covid.jpeg);
     background-repeat: no-repeat;
     background-size:1416px;
 }
 .blanco{
-    background-color: rgb(255, 255, 255, 0.8);}
-
-.bblanco{
-    border: 2px solid salmon;
-    text-align: justify;
-    display: grid;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-    padding: 15px 120px 50px;
 }
-.rrojo{
+/*signos*/
+.cont-signos{
+    margin: 10px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.cont-title{
+    display:flex;
     color: var(--dark-blue);
-    display:grid ;
-    padding: 10px 0px;
+    padding:0px;
+    margin: 10px;
 }
-.rojo{
+.cont-title img{
     width: 35px;
-    margin: 15px;
+    margin-right: 10px;
 }
-
+.cont-title h2{
+    margin: 0%;
+    padding: 0%;
+}
+/*lista*/
 li{
     list-style-image: url(../img/8-chulo.png);
-    list-style-position: inside;
-    padding:8px;
-    
+    list-style-position:inside;
+    padding:10px;
+    padding-left: 50px;
 }
-
-.oms{
+/*que-hacer*/
+.oms {
     width:120px;
-    margin: 5px 0px 0px 110px;
+    margin: 10px 0px;
 }
-.curso{
-    margin: 5px 0px 0px 30px;
+.cont-quehacer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 .curso a{
     text-decoration: underline;
     color: var(--dark-blue);
 }
+.curso a:hover{
+    color: var(--blue);
+}
 #dudas{
-    padding: px 0px;
+    padding: 0px;
     background-color: var(--gris);
     
 }
-.adudas{
+.a-dudas{
     background-color: var(--dark-blue);
     color: var(--white);
     padding: 8px 10px;
-    margin: 0px 
+    margin: 0px 0 10px; 
 }
-.bdudas{
-    background-color: var(--dark-blue);
+/*footer*/
+footer{
     color: var(--white);
-    padding: 8px 10px;
+    background-color:var(--black) ;
+    text-align: center;
+    padding: 1px 0px 30px;
+    margin: 0px 0px 15px;
+}
+@media screen and (min-width:768px) {
+    body{
+        border:5px solid rgb(253, 255, 134);
+    }
+    /*home-index*/
+    .c-logi{
+        visibility:visible;
+        display:flex;
+        background-color: var(--dark-blue);
+        padding: 4px 8px;
+        color:var(--white);
+        border-radius: 15px;
+        border-color: var(--dark-blue);
+    }
+    /*fondo*/
+    .blanco{
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width:1024px) {
+    body{
+        border:5px solid rgb(162, 255, 134);
+    }
+    /*1024*/
+    .a-logi, .b-logi{
+        margin:0 20px;
+    }
+    .c-logi{
+        margin:0 30px 0 50px;
+    }
+    
+    /*2 header cel*/
+    .cont-header2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .alogin{
+        justify-content:left;
+        padding-left: 30px;
+    }
+    .linea{
+        width: 65%;
+        margin: 12px 30px;
+    }
+    /*Banner cel*/
+    
+    .banner h1, h2{
+        padding-right: 300px;
+    }
+    .banner h2{
+        padding-top: 100px;
+    }
+    .d-logi{
+        margin:0 300px 100px 0;
+    }
+    .franja{
+        max-width:1400px;   
+        margin-top: 40px;
+        width:100%;
+    }
+    /*Signos y que hacer cel*/
+    /*signos*/
+    .cont-signos{
+        margin: 10px;
+    }
+    .cont-title{
+        display:flex;
+        justify-content: justify;
+        align-items: center;
+        color: var(--dark-blue);
+        padding:0px;
+    }
+    .cont-title img{
+        width: 35px;
+        padding:  10px;
+    }
+    .cont-title h2{
+        margin: 0%;
+    }
+    /*lista*/
+    li{
+        list-style-image: url(../img/8-chulo.png);
+        list-style-position:inside;
+        padding:10px;
+        padding-left: 50px;
+    }
+    /*que-hacer*/
+    .oms{
+        width:120px;
+        margin: 5px 0px;
+    }
+    .cont-quehacer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 26px;
+    }
 }
 
+@media screen and (min-width:1200px) {
+    body{
+        border:5px solid rgb(255, 134, 134);
+    }
+    .logi{
+        margin-left: 210px;
+    }
+    .a-logi, .b-logi{
+        margin:0 20px;
+    }
+    .c-logi{
+        margin:0 30px 0 50px;
+    }
+    
+    /*2 header cel*/
+    .cont-header2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .alogin{
 
-
+        justify-content:left;
+        padding-left: 30px;
+    }
+    
+    .linea{
+        max-width:1000px;
+        width: 65%;
+        margin-right: 30px;
+    }
+    }
