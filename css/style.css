@@ -18,6 +18,9 @@ body{
     background-color:var(--white) ;
     font-family:'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 /*home cel*/
 /*primer header cel*/
@@ -441,6 +444,225 @@ footer{
     width: 40%;
     margin-right:20px;
     margin-bottom: -20px;
+}
+/*aviso dashboard*/
+.background-aviso{
+    background-color:rgba(0, 0, 0, 0.329);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.cont-aviso{
+    width: 380px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: var(--white);
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    bottom:25%;
+    left: 5%;
+    right:5%;
+}
+.aaviso p{
+    font-size: 25px;
+}
+.cont-aviso-boton{
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.baviso, .caviso{
+    height: 40px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.baviso a, .caviso a {
+    color: var(--white);
+}
+.baviso{
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:5px ;
+    width: 125px;
+}
+.baviso:hover{
+    background-color:rgb(240, 126, 60);
+}
+.caviso{
+    background-color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    border-radius:5px;
+    width: 100px;
+}
+.caviso:hover{
+background-color: rgb(31, 50, 95);
+}
+/*Pacientes*/
+.pacient{
+    background-color: var(--black);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pacient img{
+    width: 220px;
+}
+
+#house{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.pa{
+    width: 1400px;
+    background-color: var(--blue);
+    padding: 0px 0px 5px;
+    
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  20px 125px 0px;
+}
+#azul {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+#agregar{
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:10px;
+    padding: 8px 12px;
+}
+#agregar img{
+    padding: 0px 0px 0px 8px;
+}
+#agregar a{
+    color: var(--white);
+}
+
+.pac{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pac input{
+    background-color: var(--white);
+    padding: 10px;
+    border: 3px solid var(--blue);
+    border-radius: 12px;
+}
+.ppac img{
+    width: 25px;
+    padding: 3px;
+}
+.ppac{
+    
+    background-color: var(--dark-blue);
+    border: 3px solid var(--blue);
+    border-radius: 10px;
+    margin: 20px 8px;
+}
+.table{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tablee{
+    border-collapse:collapse;
+    border: 2px solid var(--blue);
+}
+.table th{
+    padding: 10px 40px;
+    background-color: var(--dark-blue);
+    color:var(--white);
+    border: 2px solid var(--blue);
+
+}
+
+.table td{
+    padding: 0px 5px;
+    background-color: var(--gris);
+    border-collapse:collapse;
+    border: 2px solid var(--blue);
+}
+.botom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.edit{
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elim{
+    color: var(--white);
+    background-color: var(--red);
+    border:none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin:0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit img{
+    width: 20px;
+    padding-left: 8px;
+}
+.elim img{
+    width: 25px;
+    padding-left: 8px;
+}
+.foote{color: var(--white);
+    background-color:var(--black) ;
+    text-align: center;
+    margin: 0px;
+    position: static;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
 }
 @media screen and (min-width:768px) {
     body{
