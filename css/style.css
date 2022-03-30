@@ -514,17 +514,17 @@ footer{
 background-color: rgb(31, 50, 95);
 }
 /*Pacientes*/
-.pacient{
+/*header*/
+.header-pacientes{
     background-color: var(--black);
     padding: 5px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.pacient img{
+.header-pacientes img{
     width: 220px;
 }
-
 #house{
     width: 25px;
     height: 25px;
@@ -533,71 +533,77 @@ background-color: rgb(31, 50, 95);
     border-radius: 50%;
     padding: 5px;
 }
-
-.pa{
-    width: 1400px;
+/*linea division pacientes*/
+.paciente-linea{
+    max-width:1500px;
+    width: 100%;
     background-color: var(--blue);
     padding: 0px 0px 5px;
-    
 }
-.titulo{
+/*botones*/
+.contain-boton{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin:  20px 125px 0px;
-}
-#azul {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--blue);
+    justify-content: space-between;
+    margin:5px 30px;
 }
-#agregar{
+.agregar{
     display: flex;
     align-items: center;
-    color: #ffff;
+    color: var(--white);
     background-color: var(--orange);
     border: 2px solid var(--orange);
     border-radius:10px;
     padding: 8px 12px;
+    margin-right: 20px;
 }
-#agregar img{
+.agregar:hover{
+    background-color:rgb(240, 126, 60);
+}
+.agregar img{
     padding: 0px 0px 0px 8px;
 }
-#agregar a{
+.agregar a{
     color: var(--white);
 }
-
-.pac{
+.form-pacientes{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.pac input{
+.form-pacientes input{
     background-color: var(--white);
     padding: 10px;
     border: 3px solid var(--blue);
     border-radius: 12px;
 }
-.ppac img{
+.form-pacientes img{
     width: 25px;
     padding: 3px;
 }
-.ppac{
-    
+.boton-form-pacientes{
     background-color: var(--dark-blue);
     border: 3px solid var(--blue);
     border-radius: 10px;
-    margin: 20px 8px;
+    margin-left:10px;
 }
-.table{
+/*titulo: paciente*/
+#azul {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+/*tabla pacientes*/
+.cont-table{
     margin: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    overflow: auto;
 }
-.tablee{
+.table{
     border-collapse:collapse;
     border: 2px solid var(--blue);
 }
@@ -606,9 +612,7 @@ background-color: rgb(31, 50, 95);
     background-color: var(--dark-blue);
     color:var(--white);
     border: 2px solid var(--blue);
-
 }
-
 .table td{
     padding: 0px 5px;
     background-color: var(--gris);
@@ -621,7 +625,6 @@ background-color: rgb(31, 50, 95);
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    
 }
 .edit{
     background-color: var(--blue);
@@ -633,6 +636,9 @@ background-color: rgb(31, 50, 95);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.edit:hover{
+    background-color: #a8d9dd;
 }
 .elim{
     color: var(--white);
@@ -646,7 +652,9 @@ background-color: rgb(31, 50, 95);
     align-items: center;
     justify-content: center;
 }
-
+.elim:hover{
+    background-color: rgb(190, 35, 35);
+}
 .edit img{
     width: 20px;
     padding-left: 8px;
@@ -655,6 +663,7 @@ background-color: rgb(31, 50, 95);
     width: 25px;
     padding-left: 8px;
 }
+/*footer de pacientes*/
 .foote{color: var(--white);
     background-color:var(--black) ;
     text-align: center;
@@ -663,6 +672,113 @@ background-color: rgb(31, 50, 95);
     bottom: 0%;
     right: 0%;
     left: 0%;
+}
+/*form pacientes*/
+/*titulo principal del form pacientes*/
+.title-registrar h1{
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--dark-blue);
+    position: static;
+    border-radius: 5px;
+}
+/*fecha y N-registro*/
+.cont-fechayregistro{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+.cont-fechayregistro input{
+    max-width: 300px;
+    width: 50%;
+    border: 2px solid var(--blue);
+    height: 25px;
+    padding: 5px;
+    margin: 15px 10px;
+}
+/*contenedores principales*/
+.fondo-gris{
+    background-color:var(--white);
+    border: 2px solid rgb(168, 168, 168);
+    margin: 5px 5px 25px 5px;
+}
+.formp{
+    background-color: var(--gris);
+    border: 2px solid  rgb(128, 128, 128);
+    border-radius: 20px;
+    margin: 20px ;
+    padding: 20px;
+}
+.diseño-form h2{
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--blue);
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    padding:5px;
+}
+.diseño-form img{
+    float: left;
+    padding: 5px;
+    width: 20px;
+}
+.diseño-form select{
+    border: 2px solid var(--blue);
+    height: 40px;
+    padding: 5px;
+    margin: 20px 10px 0px 10px;
+    width:100%;
+    border: 2px solid var(--blue);
+    height: 40px;
+    padding: 5px;
+    margin: 15px auto;
+}
+.diseño-form input{
+    width: 97%;
+    border: 2px solid var(--blue);
+    height: 25px;
+    padding: 5px;
+    margin: 15px auto;
+}
+/*3targeta*/
+.preguntas label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.apreguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.apreguntas input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aagregar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.aagregar button{
+    color: #ffff;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius:10px;
+    padding: 8px 25px;
+    margin: 0px 0px 50px 0px;
+}
+.aagregar a{
+    color: var(--white);
+}
+.apreguntas input{
+   margin: 10px;
 }
 @media screen and (min-width:768px) {
     body{
@@ -813,6 +929,9 @@ background-color: rgb(31, 50, 95);
     width: 60%;
     margin-bottom: -50px;
 }
+/*formulario*/
+.diseño-form select{width:100%;}
+.diseño-form input{ width: 100%;}
 }
 
 @media screen and (min-width:1200px) {
@@ -852,4 +971,10 @@ background-color: rgb(31, 50, 95);
     .cont-boton{
         margin:0 380px ;
     }
+    /*pacientes*/
+    .contain-boton{
+        margin:5px 130px;
+    }
+    .cont-table{
+        justify-content: center;}
     }

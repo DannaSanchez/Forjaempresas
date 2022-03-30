@@ -12,27 +12,27 @@
 
 </head>
 <body>
-    <header class="pacient">
+    <header class="header-pacientes">
         <img src="img/0-logoforja.png" alt="logo">
         <div>
         <a href="dashboard.html"> <img id="house" src="img/17-house-user.svg" alt="home"></a>
         <a href="index.html"> <img id="house" src="img/18-power.svg"/></a>
     </div>
     </header>
+    <img class="paciente-linea" src="img/franjaylinea.svg" alt="franja">
     
     <section>
-        <img class="pa" src="img/franjaylinea.svg" alt="franja">
-    <article class="reg">
+    <article class="title-registrar">
         <h1>REGISTRO USUARIO NUEVO</h1>
     </article>
-    <article class="fondo">
+    <article class="fondo-gris">
     <article class="formp">
-    <div class="inp">
         <form action="pacientes.html">
-            <div>
+            <div class="cont-fechayregistro">
             <input type="date" name="fecha" required>
             <input type="text" name="name" placeholder="N registro" required>
             </div>
+    <div class="diseño-form">
             <h2> <img src="img/5-userr.svg" alt=""> DATOS DEL PACIENTE</h2>
             <div class="opciones">
                 <input type="text" name="name" placeholder="Escribe tu nombre" required>
@@ -1264,6 +1264,7 @@
                 <input type="text" name="Alergias" placeholder="Alergias" required>
             </div>
         </div>
+    </div>
             <div class="preguntas">
             <label for="prueba">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</label>
             <div class="apreguntas">
@@ -1279,6 +1280,7 @@
             NO<input name="cercano" id="cercano" type="radio">
             </div>
         </form>
+    
     </article>
     <article class="aagregar">
     <button ><a href="pacientes.html">Guardar</a></button>
