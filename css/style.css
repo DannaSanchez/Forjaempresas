@@ -688,6 +688,7 @@ background-color: rgb(31, 50, 95);
     display: flex;
     justify-content:left;
     align-items:center;
+
 }
 .cont-fechayregistro input{
     max-width: 300px;
@@ -777,13 +778,13 @@ background-color: rgb(31, 50, 95);
 .aagregar a{
     color: var(--white);
 }
+.aagregar button:hover{
+    background-color:rgb(240, 126, 60);
+}
 .apreguntas input{
    margin: 10px;
 }
 @media screen and (min-width:768px) {
-    body{
-        background-color: rgb(253, 255, 134);
-    }
     /*home-index*/
     .c-logi{
         visibility:visible;
@@ -810,12 +811,14 @@ background-color: rgb(31, 50, 95);
     /*menu dashboard*/
     .amenu{width:200px;}
     .world{width: 180px; margin-bottom: -20px;}
+    /*formulario*/
+    .diseño-form select{
+        width:100%;}
+.diseño-form input{
+    width: 98%;
+}
 }
 @media screen and (min-width:1024px) {
-    body{
-        background-color:rgb(162, 255, 134);
-    }
-    /*1024*/
     .a-logi, .b-logi{
         margin:0 20px;
     }
@@ -929,15 +932,94 @@ background-color: rgb(31, 50, 95);
     width: 60%;
     margin-bottom: -50px;
 }
-/*formulario*/
-.diseño-form select{width:100%;}
-.diseño-form input{ width: 100%;}
+/*form pacientes*/
+.diseño-form input{
+    display: flex;
+    justify-content: space-around;
+    margin-left:10px;
+    padding: 5px;
+    margin: 15px auto;
+}
+/*1targeta*/
+.opciones input{
+    max-width: 595px;
+    width: 40%;
+}
+.opciones select{
+    max-width: 609px;
+    width: 41.6%;
+}
+.opciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+/*1.5 tarjeta*/
+.departamento{
+    margin: 0;
+    padding: 0px;
+    max-width: 80px;
+    width: 50%;
+}
+.municipioderesidencia{
+    margin: 0;
+    padding: 0px;
+    max-width: 50px;
+    width: 100%;
+}
+.a-opciones input{
+    max-width: 595px;
+    width: 50%;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*2targeta*/
+.oopciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.oopciones input{
+    max-width: 580px;
+    width: 20%;
+    margin:0;
+}
+.oopciones select{
+    max-width: 280px;
+    width: 100%;
+    margin:0;
+}
+.oopciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+/*3targeta*/
+.preguntas label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+.cont-fechayregistro{
+    margin: 0 0 0 28px;
+}
 }
 
 @media screen and (min-width:1200px) {
-    body{
-        background-color:  rgb(255, 134, 134);
-    }
     .logi{
         margin-left: 210px;
     }
@@ -977,4 +1059,8 @@ background-color: rgb(31, 50, 95);
     }
     .cont-table{
         justify-content: center;}
-    }
+    .opciones select{
+            width: 41.1%;}
+    .cont-fechayregistro{
+        margin: 0 0 0 45px;}
+}
