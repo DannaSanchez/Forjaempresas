@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/8eaafd3e49.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -18,8 +18,11 @@
             <img src="img/0-logoforja.png" alt="logo">
         </div>
         <menu class="cont-opciones">
+            <input type="checkbox" name="barra" id="chk-menu">
+        <label for="chk-menu" class="btn-menu"><i class="fa-solid fa-bars"></i></label>
+        <div class="items">
             <button class="amenu">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAZxJREFUSEvdlYEtRUEQRc+vABWgAlSAClABKkAFqAAVUAIVoAJUQAl0IOdnV9azb+e9TyRsIvuT3Tdn7t2ZMeEX1+QXWfw52BLwMsShoco2gJUU9KkIvgo8AOfAUQSMYAa7BNzzegVOgIu0H6eDfeCqBWzB5lPW2lRbO8B1AuwCJrGc9uoHLdghcNbI1OALgEn5ZnNAU10LZtZbwTuoRNAdsA6cJmtHKxsCWwMefwIW2fiWLFSFQKt1ZmW+hUEWe6y01C35Mqls62gb/cCS184uMCvw/DYptGC0tbfBoz4TqEKb2sAGFJ4Ddt/VcxVX+y2C2WN9Nt4nr0xmL9mZ71ZboA+mEnusnBzdd1CFb+Yk8bdQldoCrlypH9/VYAY4iOZccW4RqcRdoD1nZbpvlnG6sKjc+3IQZGAV6opF80VdCTOr56J3RoibXi17zALy/T71XQmbVVVOSoB95rIaHc43wHa+UMKGjKdIrYNZK61i//ytxdNVwvIwjQK2zn0341RXCbNX+v53DU1A+741QYaCwnvRBAkDjLnwf2Hv6ZxSHPhrcIQAAAAASUVORK5CYII="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAZxJREFUSEvdlYEtRUEQRc+vABWgAlSAClABKkAFqAAVUAIVoAJUQAl0IOdnV9azb+e9TyRsIvuT3Tdn7t2ZMeEX1+QXWfw52BLwMsShoco2gJUU9KkIvgo8AOfAUQSMYAa7BNzzegVOgIu0H6eDfeCqBWzB5lPW2lRbO8B1AuwCJrGc9uoHLdghcNbI1OALgEn5ZnNAU10LZtZbwTuoRNAdsA6cJmtHKxsCWwMefwIW2fiWLFSFQKt1ZmW+hUEWe6y01C35Mqls62gb/cCS184uMCvw/DYptGC0tbfBoz4TqEKb2sAGFJ4Ddt/VcxVX+y2C2WN9Nt4nr0xmL9mZ71ZboA+mEnusnBzdd1CFb+Yk8bdQldoCrlypH9/VYAY4iOZccW4RqcRdoD1nZbpvlnG6sKjc+3IQZGAV6opF80VdCTOr56J3RoibXi17zALy/T71XQmbVVVOSoB95rIaHc43wHa+UMKGjKdIrYNZK61i//ytxdNVwvIwjQK2zn0341RXCbNX+v53DU1A+741QYaCwnvRBAkDjLnwf2Hv6ZxSHPhrcIQAAAAASUVORK5CYII="/>
             <a href="pacientes.html">Pacientes</a> </button>
 
             <button class="amenu">
@@ -27,9 +30,9 @@
             <a href="pacientes.html">Vacunación</a> </button>
 
             <button class="amenu">
-            
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAa1JREFUSEvtld0xBUEQRs+NABHg2QMiQAZEgAQUEkACfjKQASJABIQgBKq8U0f13Nq7O7Ozex88KF21tbfuTNfp/vpnJ/yiTX6RxTywG2AN+AR2xwQ7L+wIePiHJamHyngAvMZjzdoyen5bq18NtgjcAdvADvAE5GBfEchhvLPcPtgK8Aj41jZ7MhOmvUdQqtCxPpgO68AHoEz34Z3LzMw9XwDeIjDBM1aCHQNXcTPJlxxzMM82QmaBF8D5UJjRLUd9BDetBPNOCtKsVkPWqW8uMyN8iRs6CB4Ks6G8b3Z7Del//HOwFJ210rltl40/TjPnduxWTsocTK3PgOdo+Vxj9f03CpYysxtt97E2CmYbO1/aUrvIA8g2hzVzwGe2Sqn1iw4VmJ8cN47Waa4SzIj2I6tOCxeANpNd7MbJ1rsE08GaKYdvB7uzERpQQS4BN42WVttMXH3rqimJs2MNLH7brLEg51Pr1Co51La+kV5HhvoITZ8asxeUFrXnJ3E/q3QNppMRC3RQS2aNnM9c5lOfIbB02QyUVri/zdLHbZ/9pLQjGwOrdH39+O/CvgFjD2Yc7vU4ewAAAABJRU5ErkJggg=="/>
             <a href="index.html">Cerrar sesión</a> </button> 
+        </div>
         </menu>
     </article>
     <article class="cont-general-busqueda">
@@ -40,8 +43,10 @@
         <h1>BIENVENIDOS</h1>
             <form class="medico"action="avisodashboard.html">
                 <input name="number" type="text" placeholder="Digite el número de documento">
-                <button class="busqu" type="submit" name="submit"><img src="img/15-search.png"/></button>
-                <button class="busqu" type="reset" name="reset"><img src="img/16-reset.png "/></button>
+                <div class="cont-botones">
+                    <button class="busqu" type="submit" name="submit"><img src="img/15-search.png"/></button>
+                    <button class="busqu" type="reset" name="reset"><img src="img/16-reset.png "/></button>
+                </div>
             </form>  
             <div class="cont-img">
             <img class="world"src="img/13. guerreros.png" alt="ilustracion">

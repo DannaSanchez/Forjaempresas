@@ -35,11 +35,13 @@ a{
 .a-logi{
     display: flex;
     align-items: center;
-    padding:0 5px 0 0;
-
+    padding:0 5px 0 0
+}
+.a-logi, .b-logi p{
+    font-size: 12px;
 }
 .b-logi{
-    padding:0 5px;
+    padding:0 20px 0 0;
     display: flex;
     text-align: justify;
     align-items: center;
@@ -217,7 +219,7 @@ footer{
 .cont-boton{
     display: flex;
     justify-content:right;
-    margin:0 70px ;
+    margin:0 50px ;
 }
 .volver{
     background-color: var(--dark-blue);
@@ -237,7 +239,11 @@ footer{
 }
 /*contenedor*/
 .cont-form-logo{
-    margin: 0 70px 80px;
+    margin: 0 50px 80px;
+}
+.s-logo img{
+    max-width: 300px;
+    width: 90%;
 }
 .s-logo{
     box-shadow: 0px 2px 6px var(--black);
@@ -253,7 +259,7 @@ footer{
 .s-logo p{ 
     padding-top:5px;
     font-weight:900;
-    font-size: 20px;
+    font-size: 16px;
 }
 .s-b-logo{
     box-shadow: 0px 2px 6px var(--black);
@@ -285,7 +291,8 @@ footer{
 .log input{
     margin: 5px;
     padding: 3px;
-    max-width:max-content;
+    max-width:500px;
+    width: 70%;
     border: 2px solid #a8d9dd;
     border-radius: 13px;
     background: linear-gradient(to right, #94d2d848, #e0edee5e )
@@ -319,8 +326,8 @@ footer{
 .cont-user{
     display: flex;
     align-items: center;
-    justify-content: right;
-    margin:0 15px 5px;
+    justify-content: center;
+    margin:0  5px;
 }
 .user{
     background: linear-gradient(to right, #C0C0C0, #e7e6e6);
@@ -343,9 +350,39 @@ footer{
 }
 /*logo de barmenu*/
 .logo-dashboard img{
-    width: 250px;
+    max-width: 250px;
+    width: 85%; 
     margin: 10px;
     padding:10px;
+}
+/*intento menu*/
+cont-opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .items{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.btn-menu {
+    color:var(--orange);
+    font-size:25px;
+    width: 80%;
+    cursor: pointer;
+    margin:0 10px;
+}
+.btn-menu:hover{
+    color:var(--orange);
+}
+.items{
+    width:100vw;
+    display:none;
 }
 /*menu dashboard*/
 .cont-menu-opciones{
@@ -356,50 +393,52 @@ footer{
     background-color: var(--black);
 }
 .cont-opciones{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     display: flex;
+    flex-direction: column;
 }
 .amenu{
     background-color:var(--gris) ;
     border: 2px solid var(--orange);
     border-radius: 5px;
-    width:130px;
+    width:auto;
     padding: 5px 0;
-    margin:10px;
+    margin:4px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .amenu img{
-    padding: 1px;
+    width: 20px;
 }
 .amenu a{
+    font-size: 12px;
     text-decoration: none;
     color: var(--black);
 }
 /*dashboard busqueda*/
 .cont-general-busqueda{
     background-color: rgba(196, 196, 196, 0.308);
-    display: flex;
-    align-items:flex-end;
-    flex-direction: column;
-    padding:0px 0 0;
 }
 .cont-busqueda{
+    padding:0px;
+    margin: 20px 0 0 0;
     display: flex;
-    align-items:center;
     flex-direction: column;
-    padding:0px 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0;
 }
 .cont-busqueda h1{
+    font-size: 28px;
     color: var(--orange);
-    font-weight: 500;
-    padding-bottom: 10px;
+    font-weight: 400;
+    padding-bottom: 5px;
 }
-
 .medico input{
-    width: 260px;
+    width: 200px;
     background-color:  rgb(196, 196, 196, 0.1);
     margin: 10px 0px;
     border:none;
@@ -409,8 +448,9 @@ footer{
 .medico{
     display: flex;
     align-items: center;
+    flex-direction:column;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 .busqu{
     background-color: var(--dark-blue);
@@ -455,11 +495,9 @@ footer{
     bottom: 0%;
 }
 .cont-aviso{
-    width: 380px;
-    padding: 25px;
+    padding: 10px;
     border-radius: 5px;
     background-color: var(--white);
-    margin: auto;
     display: flex;
     text-align: center;
     align-items: center;
@@ -467,12 +505,17 @@ footer{
     flex-direction: column;
     position: absolute;
     top: 25%;
-    bottom:25%;
+    bottom:45%;
     left: 5%;
-    right:5%;
+    right: 5%;
+}
+.cont-aviso img{
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .aaviso p{
-    font-size: 25px;
+    font-size: 35px;
 }
 .cont-aviso-boton{
     margin-top: 30px;
@@ -481,7 +524,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
 .baviso, .caviso{
     height: 40px;
     color: var(--white);
@@ -490,6 +532,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     margin: 5px;
+    padding: 5px;
 }
 
 .baviso a, .caviso a {
@@ -499,7 +542,8 @@ footer{
     background-color: var(--orange);
     border: 2px solid var(--orange);
     border-radius:5px ;
-    width: 125px;
+    max-width: 110px;
+    width: 130%;
 }
 .baviso:hover{
     background-color:rgb(240, 126, 60);
@@ -508,7 +552,8 @@ footer{
     background-color: var(--dark-blue);
     border: 2px solid var(--dark-blue);
     border-radius:5px;
-    width: 100px;
+    max-width: 90px;
+    width: 100%;
 }
 .caviso:hover{
 background-color: rgb(31, 50, 95);
@@ -543,6 +588,7 @@ background-color: rgb(31, 50, 95);
 /*botones*/
 .contain-boton{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -556,7 +602,7 @@ background-color: rgb(31, 50, 95);
     border: 2px solid var(--orange);
     border-radius:10px;
     padding: 8px 12px;
-    margin-right: 20px;
+    margin: 20px;
 }
 .agregar:hover{
     background-color:rgb(240, 126, 60);
@@ -786,6 +832,10 @@ background-color: rgb(31, 50, 95);
 }
 @media screen and (min-width:768px) {
     /*home-index*/
+    .a-logi, .b-logi p{
+        font-size: 15px;
+        margin: 10px;
+    }
     .c-logi{
         visibility:visible;
         display:flex;
@@ -808,9 +858,45 @@ background-color: rgb(31, 50, 95);
     .cont-boton{
         margin:0 180px ;
     }
+    .s-logo img{
+        width: 300px;
+    }
+    .s-logo p{
+    font-size:20px;
+    }
+    .log input{
+        width: 100%;
+    }
     /*menu dashboard*/
-    .amenu{width:200px;}
+    .items{
+        width:100vw;
+        display:none;
+    }
+    .medico input{
+        width: 310px;
+        margin-right: 10px;
+    }
+    .medico{
+        flex-direction:row;
+    }
+    .cont-user{
+        justify-content:flex-end;
+    }
     .world{width: 180px; margin-bottom: -20px;}
+    /*aviso*/
+    .cont-aviso{
+        top: 30%;
+        bottom:30%;
+        left: 30%;
+        right: 30%;
+    }
+    /*pacientes*/
+    .contain-boton{
+        flex-direction: row;
+    }
+    .agregar{
+        margin-right: 20px;
+    }
     /*formulario*/
     .diseño-form select{
         width:100%;}
@@ -899,6 +985,9 @@ background-color: rgb(31, 50, 95);
     .cont-boton{
         margin:0 280px ;
     }
+    .s-logo img{
+        width: 360px;
+    }
     /*dashboard*/
 /*menu dashboard*/
 .cont-menu{
@@ -910,20 +999,33 @@ background-color: rgb(31, 50, 95);
     justify-content:center;
 }
 .logo-dashboard img{
-    margin: 0 0 100px 0;
+    width: 300px;
+    margin: 0 0 10px 0;
 }
 .cont-opciones{
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
-.amenu{
+.items{
     width:310px;
     margin:10px 0%;
 }
-/*dashboard busqueda*/
-.cont-busqueda h1{
-    padding: 68px;
+.btn-menu{
+    display: none;
 }
+.items{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.cont-busqueda{
+    margin-bottom:0px;
+    padding: 110px 0 0px 0;
+}
+.amenu a{
+    font-size: 18px;
+}
+/*dashboard busqueda*/
 /*imagenes*/
 .dash-linea{
     max-width:1500px;
@@ -932,6 +1034,42 @@ background-color: rgb(31, 50, 95);
     width: 60%;
     margin-bottom: -50px;
 }
+.cont-busqueda{
+    margin: 20px 0 0 0;
+}
+.amenu{
+    margin: 10px 5px;
+}
+.logo-dashboard{
+    margin-bottom: 40px;
+}
+.medico{
+    padding-bottom: 40px;
+}
+/*aviso*/
+.cont-aviso{
+    left: 25%;
+    right: 25%;
+}
+.cont-aviso p{
+    font-size: 25px;
+    padding: 10px;
+}
+.baviso a{
+font-size: 20px;
+}
+.caviso a{
+    font-size: 20px;
+}
+.baviso{
+    max-width: 510px;
+    width: 130%;
+}
+.caviso{
+    max-width: 170px;
+    width: 100%;
+}
+
 /*form pacientes*/
 .diseño-form input{
     display: flex;
