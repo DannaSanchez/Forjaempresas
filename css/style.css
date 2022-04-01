@@ -540,8 +540,8 @@ cont-opciones{
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 25%;
-    bottom:45%;
+    top: 5%;
+    bottom:5%;
     left: 5%;
     right: 5%;
 }
@@ -656,6 +656,8 @@ background-color: rgb(31, 50, 95);
     justify-content: center;
 }
 .form-pacientes input{
+    max-width: 600px;
+    width: 90%;
     background-color: var(--white);
     padding: 10px;
     border: 3px solid var(--blue);
@@ -1276,5 +1278,8 @@ font-size: 20px;
         /*4animaciones*/
     .a-animacion-texto{
         padding-left:220px ;
+    }
+    .cont-table{
+        overflow:hidden;
     }
 }
