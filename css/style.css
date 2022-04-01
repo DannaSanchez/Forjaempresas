@@ -101,6 +101,7 @@ a{
     background-position-x:right;
     background-size:cover;
     background-repeat: no-repeat;
+    
 }
 .banner h1, h2 {
     text-shadow: 2px 2px 4px var(--black);
@@ -109,14 +110,24 @@ a{
 .espacio{
     background-color: rgba(255, 255, 255, 0.431);
     text-align: center;
+    padding-top: 70px;
 }
+
 .banner h1{
     font-size: 50px; 
 }
 .banner h2{
     font-size: 40px;
-    padding-top: 70px;
     color: var(--orange);
+}
+/*animacion index*/
+.a-animacion-texto{
+    width: 100%;
+    animation:typing 2s steps(24); 
+    overflow: hidden;
+}
+    @keyframes typing{
+        from {width: 0}
 }
 .d-logi{
     margin: 0 auto 70px;
@@ -311,11 +322,25 @@ footer{
     color:var(--white);
     border-radius: 5px;
     margin: 10px 0 30px ;
+    animation: 1s zoom 1;
+}
+@keyframes zoom{
+    20%{
+        transform: scale(0.5);
+        rotate: (-6deg);
+    }
+    30%, 70%{
+        transform: scale(1.0);
+        rotate: (6deg);
+    }
+    50%, 90%{
+        transform: scale(1.5);
+        rotate: (-6deg);
+    }
 }
 .ingresar a{
     color:var(--white);
     text-decoration: none;
-    
 }
 .ingresar:hover{
     background-color:var(--dark-blue);
@@ -354,6 +379,16 @@ footer{
     width: 85%; 
     margin: 10px;
     padding:10px;
+    animation: 3s rebote 1;
+}
+/*animacion de dashboard*/
+@keyframes rebote{
+    20%, 50%, 80%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-25px);
+    }
 }
 /*intento menu*/
 cont-opciones{
@@ -420,6 +455,7 @@ cont-opciones{
 /*dashboard busqueda*/
 .cont-general-busqueda{
     background-color: rgba(196, 196, 196, 0.308);
+    width: 100vw;
 }
 .cont-busqueda{
     padding:0px;
@@ -481,7 +517,7 @@ cont-opciones{
 }
 .world{
     max-width:300px;
-    width: 40%;
+    width: 45%;
     margin-right:20px;
     margin-bottom: -20px;
 }
@@ -640,6 +676,13 @@ background-color: rgb(31, 50, 95);
     text-align: center;
     text-decoration: underline;
     text-decoration-color: var(--blue);
+    animation: 1s mover-x 1;
+}
+/*animacion pacientes*/
+@keyframes mover-x {
+  0% {
+  transform: translateX(1024px);
+  }
 }
 /*tabla pacientes*/
 .cont-table{
@@ -647,7 +690,8 @@ background-color: rgb(31, 50, 95);
     display: flex;
     align-items: center;
     text-align: center;
-    overflow: auto;
+    overflow:scroll;
+    animation: 1s mover-x 1;
 }
 .table{
     border-collapse:collapse;
@@ -826,11 +870,25 @@ background-color: rgb(31, 50, 95);
 }
 .aagregar button:hover{
     background-color:rgb(240, 126, 60);
+    animation: 1s intento 1;
+}
+@keyframes intento {
+    0%{
+        transform: rotateZ(5deg);
+    }
+    50%{
+        transform: rotateZ(-5deg);
+    }
+    100%{
+        transform: rotateZ(5deg);
+    }
 }
 .apreguntas input{
    margin: 10px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) {body{
+    background-color:antiquewhite;
+}
     /*home-index*/
     .a-logi, .b-logi p{
         font-size: 15px;
@@ -882,7 +940,7 @@ background-color: rgb(31, 50, 95);
     .cont-user{
         justify-content:flex-end;
     }
-    .world{width: 180px; margin-bottom: -20px;}
+    .world{width: 240px; margin-bottom: -20px;}
     /*aviso*/
     .cont-aviso{
         top: 30%;
@@ -903,8 +961,21 @@ background-color: rgb(31, 50, 95);
 .diseño-form input{
     width: 98%;
 }
+/*animaciones*/
+.a-animacion-texto{
+    white-space: nowrap;
+    height: 70px;
+    width: 80%;
+    padding-left:100px ;
+    animation:parpadeo .2s infinite step-end a;
 }
-@media screen and (min-width:1024px) {
+@keyframes parpadeo{
+    50% {border-color: transparent}
+}
+}
+@media screen and (min-width:1024px) {body{
+    background-color:gainsboro;
+}
     .a-logi, .b-logi{
         margin:0 20px;
     }
@@ -931,7 +1002,7 @@ background-color: rgb(31, 50, 95);
         padding-right: 300px;
     }
     .banner h2{
-        padding-top: 100px;
+        padding-top: 0px;
     }
     .d-logi{
         margin:0 300px 100px 0;
@@ -1155,6 +1226,11 @@ font-size: 20px;
 .cont-fechayregistro{
     margin: 0 0 0 28px;
 }
+/*3animaciones*/
+.a-animacion-texto{
+    width: 70%;
+    padding-left:90px ;
+}
 }
 
 @media screen and (min-width:1200px) {
@@ -1201,4 +1277,8 @@ font-size: 20px;
             width: 41.1%;}
     .cont-fechayregistro{
         margin: 0 0 0 45px;}
+        /*4animaciones*/
+    .a-animacion-texto{
+        padding-left:220px ;
+    }
 }
