@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pacientes</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
 </head>
@@ -27,26 +25,26 @@
     </article>
     <article class="fondo-gris">
     <article class="formp">
-        <form action="pacientes.html">
+        <form action="pacientes.html" method="post" class="pacientes">
             <div class="cont-fechayregistro">
-            <input type="date" name="fecha" required>
-            <input type="text" name="name" placeholder="N registro" required>
+            <input type="date" name="fecha" min="2021-01-01" max="2023-12-31" required>
+            <input type="number" name="name" placeholder="N registro" required title="solo registre números">
             </div>
     <div class="diseño-form">
             <h2> <img src="img/5-userr.svg" alt=""> DATOS DEL PACIENTE</h2>
             <div class="opciones">
-                <input type="text" name="name" placeholder="Escribe tu nombre" required>
-                <input type="text" name="Apellidos" placeholder="Apellidos" required>
-                <input type="text" name="identificacion" placeholder="Número de identificación" required>
-                <select name="ciudad" id="ciudad" required>
-                    <option value="0" selected="">Tipo de documento</option>
+                <input type="text" name="name" placeholder="Escribe tu nombre" required  pattern="[a-zA-Z]+" title="el nombre no puede tener números">
+                <input type="text" name="Apellidos" placeholder="Apellidos" required pattern="[a-zA-Z]+" title="el apellido no puede tener números">
+                <input type="number" name="identificacion" placeholder="Número de identificación" required min="5">
+                <select name="c" id="d" required placeholder="Tipo de documento" >
+                    <option value="">Tipo de documento</option>
                     <option value="1">Registro Civil</option>
                     <option value="2">Tarjeta de Identidad</option>
                     <option value="3">Cédula de Ciudadanía </option>
                     <option value="4">Cédula de Extranjería</option>
                 </select>
-                <input type="date" name="fecha" >
-                <input name="edad" id="edad" type="number" placeholder="Ingresar edad" step="2" required>
+                <input type="date" name="fecha" required>
+                <input name="edad" id="edad" type="number" placeholder="Ingresar edad" min="0" max="100" required title="El valor debe ser mayor a 0 y menor que 100">
             </div>
                 <h2> <img src="img/22-geo.svg" alt="">INFORMACIÓN DE CONTACTO</h2>
         <div class="opciones">
@@ -1210,15 +1208,16 @@
                                             <option value="Zona Bananera">Zona Bananera</option>
                 </select>
                 <input type="text" name="direccion" placeholder="Dirección" required>
-                <input type="email" name="email" id="email" placeholder="Correo" required pattern="/^[a-zA-Z0-9.! #$%&amp;'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/.">
-                <input type="text" name="Teléfono fijo" placeholder="Teléfono fijo" required>
-                <input type="text" name="Celular" placeholder="Celular" required>
+                <input type="email" name="email" id="email" placeholder="Correo" required>
+                <input type="number" name="Teléfono fijo" placeholder="Teléfono fijo" required>
+                <input type="number" name="Celular" placeholder="Celular" required>
             </div>
         </div>
             <h2> <img src="img/23-latido-del-corazon.svg" alt="">ESTADO DE SALUD</h2>
             <div class="oopciones">
                 <select class="form-control" id="departamento" name="departamento" placeholder="Departamento de residencia" required>
                     <option value="">Preexistencias</option>
+                    <option value = "Enfermedad">Ninguna</option>
                     <optgroup label="Problemas pulmonares">
                     <option value = "Enfermedad">Asma</option>
                     <option value = "Enfermedad">Enfermedad pulmonar obstructiva crónica (EPOC)</option>
@@ -1252,8 +1251,9 @@
                     <option value = "Enfermedad">Enfermedad renal o hepática crónica</option>
                     </optgroup> 
                   </select>
-                  <select name="Discapacidad" id="Discapacidad" required>
-                    <option value="0" selected="">Discapacidad</option>
+                  <select name="Discapacidad" id="Discapacidad" required placeholder="Discapacidad" >
+                    <option value="">Discapacidad</option>
+                    <option value = "0.1">Ninguna</option>
                     <option value="1">Discapacidad física</option>
                     <option value="2">Discapacidad sensorial</option>
                     <option value="3">Discapacidad intelectual </option>
@@ -1261,14 +1261,14 @@
                     <option value="5">Discapacidad visceral</option>
                     <option value="6">Discapacidad múltiple</option>
                 </select>
-                <input type="text" name="Alergias" placeholder="Alergias" required>
+                <input type="text" name="Alergias" placeholder="Alergias" required pattern="[a-zA-Z]+">
             </div>
     </div>
             <div class="preguntas">
-            <label for="prueba">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</label>
+            <label for="prueba" >¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</label>
             <div class="apreguntas">
-            SI<input name="prueba" id="prueba" type="radio">
-            NO<input name="prueba" id="prueba" type="radio">
+            SI<input name="prueba" id="prueba" type="radio" >
+            NO<input name="prueba" id="prueba" type="radio" required>
             </div>
             </div>
             <div class="preguntas">
@@ -1276,18 +1276,15 @@
             </div>
             <div class="apreguntas">
             SI<input name="cercano" id="cercano" type="radio"> 
-            NO<input name="cercano" id="cercano" type="radio">
+            NO<input name="cercano" id="cercano" type="radio" required>
             </div>
+        </article>
+        <article class="aagregar">
+                <button type="submit">Guardar</button>
+        </article>
         </form>
-    
-    </article>
-    <article class="aagregar">
-    <button ><a href="pacientes.html">Guardar</a></button>
-    </article>
     </article>
     </section>
-
-    
 </body>
 <footer class="foote">
     <p>© 2021 forja empresas</p>
