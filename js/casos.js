@@ -15,7 +15,7 @@ busqueda.onsubmit=tipo=(i)=>{
             confirmButtonText: 'registrar'
           }).then((result) => {
             if (result.isConfirmed) {
-              window.setTimeout(()=>{window.location.href="formpacientes.html"},1000)
+              window.setTimeout(()=>{window.location.href="formvacuna.html"},1000)
             }
           })
     }
@@ -30,7 +30,7 @@ busqueda.onsubmit=tipo=(i)=>{
             confirmButtonText: 'registrar'
           }).then((result) => {
             if (result.isConfirmed) {
-              window.setTimeout(()=>{window.location.href="formpacientes.html"},1000)
+              window.setTimeout(()=>{window.location.href="formvacuna.html"},1000)
             }
           })
     }
